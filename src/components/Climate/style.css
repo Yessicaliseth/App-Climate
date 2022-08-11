@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 150px 200px auto;
+    width: 400px;
+    height:max-content;
+    background-color: #0dabc6;
+    margin: 30px;
+    border-radius: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.container__title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container__title--h1{
+    font-size: 2rem;
+}
+
+.container__question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container__question--input{
+    width: 250px;
+    height: 35px;
+    padding: 10px;
+    border-style: none;
+    background-color:rgb(199, 216, 231);
+    color:darkslategrey;
+    font-weight: bold;
+    border-radius: 5px; 
+    font-size: 1.5rem;
+}
+
+.container__question--input:focus{
+    outline: none;
+}
+
+.container__question--button{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(247, 235, 122);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.container__response{
+    display: none;
+    grid-template-columns: repeat(auto-fill, 150px);
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+
+
+ul{
+    height: 240px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+
+.container__response .location{
+    width: 150px;
+    height: 250px;
+    background-color: azure;
+    border-radius: 15px;
+    padding: 10px;
+
+
+}
+
+.city{
+    font-size: 1rem;  
+    color:darkslategrey;
+}
+
+.temperature{
+    font-size: 2rem;
+    color: darkred; 
+}
+
+.description{
+    font-size: 1rem;
+    color:darkslategrey; 
+}
+
+@media (max-width: 460px) {
+    .container{
+        width: 300px;
+    }
+    .container__title--h1{
+        font-size: 1.5rem;
+    }
+    .container__question{
+        flex-direction: column;
+    }
+    .container__question--input{
+        width: 200px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    .container__question--button{
+        width: 80px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .container{
+        width: 600px;
+    }
+    .container__title--h1{
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media (min-width: 1500px) {
+    .container{
+        width: 800px;
+    }
+    .container__title--h1{
+        font-size: 3rem;
+    }
+    
+}
