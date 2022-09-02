@@ -67,11 +67,11 @@ export default function ClimateComponent() {
     return (
         <div className="container" id="container">
             <section className="container__title">
-                <h1 className="container__title--h1">Simple Weather App</h1>
+                <h1 className="container__title--h1">Aplicación del clima</h1>
             </section>
             <section className="container__question">
-                <input className="container__question--input" type="text" placeholder="Search for a city" />
-                <button className="container__question--button" onClick={searchTemperatureCity}>SUBMIT</button>
+                <input className="container__question--input" type="text" placeholder="Escribe una ciudad o pais" />
+                <button className="container__question--button" onClick={searchTemperatureCity}>BUSCAR</button>
             </section>
             <section className="container__response">
             </section>
