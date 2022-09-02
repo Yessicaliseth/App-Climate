@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Didact+Gothic&family=Londrina+Solid:wght@100;300&family=Raleway:wght@100;200;300;400&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -17,13 +19,13 @@ ul{
 
 .container{
     display: grid;
-    grid-template-rows: 150px 200px auto;
+    grid-template-rows: 100px 150px auto;
     width: 400px;
     height:max-content;
     background-color: #0dabc6;
     margin: 30px;
     border-radius: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Concert One', cursive;
 }
 
 .container__title{
@@ -46,13 +48,15 @@ ul{
 .container__question--input{
     width: 250px;
     height: 35px;
-    padding: 10px;
+    padding: 20px 10px;
     border-style: none;
     background-color:rgb(199, 216, 231);
-    color:darkslategrey;
+    color:rgb(82, 116, 116);
     font-weight: bold;
     border-radius: 5px; 
     font-size: 1.5rem;
+    font-family: 'Concert One', cursive;
+
 }
 
 .container__question--input:focus{
@@ -67,7 +71,7 @@ ul{
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.2rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Concert One', cursive;
 
 }
 
@@ -75,26 +79,28 @@ ul{
     display: none;
     grid-template-columns: repeat(auto-fill, 150px);
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
     gap: 20px;
 }
 
 
 
 ul{
-    height: 240px;
+    height: 200px;
     display: grid;
     grid-template-rows: 1fr 1fr 2fr 1fr;
 }
 
 .container__response .location{
     width: 150px;
-    height: 250px;
+    height: 220px;
     background-color: azure;
     border-radius: 15px;
     padding: 10px;
+}
 
-
+img{
+    width: 80px;
 }
 
 .city{
@@ -117,7 +123,8 @@ ul{
         width: 300px;
     }
     .container__title--h1{
-        font-size: 1.5rem;
+        width: 200px;
+        text-align: center;
     }
     .container__question{
         flex-direction: column;
@@ -125,13 +132,22 @@ ul{
     .container__question--input{
         width: 200px;
         height: 30px;
-        font-size: 1rem;
     }
     .container__question--button{
         width: 80px;
         height: 30px;
         font-size: 1rem;
     }
+    .container__response .location{
+        height: 180px;
+    }
+    ul{
+        height: 150px; 
+    }
+    img{
+        width: 80px;
+    }
+        
 }
 
 @media (min-width: 800px) {
@@ -141,6 +157,16 @@ ul{
     .container__title--h1{
         font-size: 2.5rem;
     }
+    .container__response .location{
+        height: 250px;
+    }
+    ul{
+        height: 240px; 
+    }
+    img{
+        width: 100px;
+    }
+       
     
 }
 
@@ -150,6 +176,15 @@ ul{
     }
     .container__title--h1{
         font-size: 3rem;
+    }
+    .description{
+        font-size: 1.2rem;
+    }
+    img{
+        width: 120px;
+    }
+    .city{
+        font-size: 1.2rem;
     }
     
 }
