@@ -129,7 +129,7 @@ img{
     }
     .container__question--input{
         width: 250px;
-        height: 80px;
+        height: 50px;
         font-weight: lighter;
         font-size: 1.2rem;
     }
